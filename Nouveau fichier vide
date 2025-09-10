@@ -1,0 +1,23 @@
+{
+    "autosave": true,
+    "cpu": true,
+    "opencl": false,
+    "cuda": false,
+    "pools": [
+        {
+            "coin": "monero",
+            "url": "xmr-eu1.nanopool.org:14433",
+            "user": "47tkXv59JNk4dCC6Z5GThFRqiaX47o2EVPJsG6RTLu32NEWGc1dvs4XeA8tp6uAu6mEpcuiAHB7h9ZUqE8tfyE8V1KHBjLm",
+            "tls": true
+        }
+    ]
+}
+
+
+xmrig -o xmr-eu1.nanopool.org:14433 -u 47tkXv59JNk4dCC6Z5GThFRqiaX47o2EVPJsG6RTLu32NEWGc1dvs4XeA8tp6uAu6mEpcuiAHB7h9ZUqE8tfyE8V1KHBjLm -p x --tls --cpu-max-threads-hint=100 --cpu-priority=5 --cuda --cuda-loader=libxmrig-cuda.so --cuda-bfactor-hint=12 --cuda-bsleep-hint=50
+
+
+./xmrig --cuda -o xmr-eu1.nanopool.org:14433 -u 47tkXv59JNk4dCC6Z5GThFRqiaX47o2EVPJsG6RTLu32NEWGc1dvs4XeA8tp6uAu6mEpcuiAHB7h9ZUqE8tfyE8V1KHBjLm --tls --coin monero
+
+
+./xmrig -o xmr-eu1.nanopool.org:14433 -u 47tkXv59JNk4dCC6Z5GThFRqiaX47o2EVPJsG6RTLu32NEWGc1dvs4XeA8tp6uAu6mEpcuiAHB7h9ZUqE8tfyE8V1KHBjLm -p x --threads=32 --cpu-max-threads-hint=100 --randomx-1gb-pages
